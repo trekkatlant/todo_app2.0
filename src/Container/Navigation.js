@@ -17,13 +17,13 @@ const Navigation = ({ handleRoute, signedIn }) => {
         return (
             <nav style={{ display: "flex", justifyContent: "flex-end" }}>
                 <button
-                    style={{ fontSize: "24px", margin: "1vw" }}
+                    style={{ fontSize: "20px", margin: "1vw" }}
                     onClick={() => handleRoute("signin")}
                 >
                     Sign In
         </button>
                 <button
-                    style={{ fontSize: "24px", margin: "1vw" }}
+                    style={{ fontSize: "20px", margin: "1vw" }}
                     onClick={() => handleRoute("signout")}
                 >
                     Sign Up
