@@ -100,22 +100,16 @@ class Todos extends Component {
                         <div key={index}>
                             {todo.completed ? (
                                 <li>
-                                    <strike>{`${todo.content}`}</strike>
+                                    <div style="text-decoration: line-through;">{`${todo.content}`}</div>
                                     <button onClick={() => this.handleToggle(todo)}>toggle</button>
-                                    <button onClick={() => this.handleDelete(todo)}>
-                                        delete
-                                    </button>
+                                    <button onClick={() => this.handleDelete(todo)}>delete</button>
                                </li>
                             ) : (
                                     <li>
                                         {`${todo.content}`}
-                                        <button onClick={() => this.handleToggle(todo)}>
-                                            toggle
-                                        </button>
+                                        <button onClick={() => this.handleToggle(todo)}>toggle</button>
 
-                                        <button onClick={() => this.handleDelete(todo)}>
-                                            delete
-                                        </button>
+                                        <button onClick={() => this.handleDelete(todo)}>delete</button>
 
                                     </li>
                                 )}

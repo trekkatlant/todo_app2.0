@@ -32,9 +32,10 @@ class Signin extends Component {
                 <h1>Sign In</h1>
                 <label>
                     Name:
-          <input type="text" name="username" onChange={this.handleInput} />
+                        <input type="text" name="username" onChange={this.handleInput} />
                 </label>
-                <button onClick={this.handleSubmit}> Sign In </button>
+                <button onClick={this.handleSubmit}> Sign In
+                </button>
             </div>
         );
     }

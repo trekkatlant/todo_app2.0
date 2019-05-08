@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Signup extends Component {
     constructor() {
-        super();
+        super(props);
         this.state = { username: "" };
     }
 
@@ -33,7 +33,7 @@ class Signup extends Component {
                 <h1>Sign Up</h1>
                 <label>
                     Name:
-          <input type="text" name="username" onChange={this.handleInput} />
+                    <input type="text" name="username" onChange={this.handleInput} />
                 </label>
                 <button onClick={this.handleSubmit}> Sign Up </button>
             </div>

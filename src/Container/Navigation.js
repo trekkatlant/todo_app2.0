@@ -8,26 +8,24 @@ const Navigation = ({ handleRoute, signedIn }) => {
                 <button
                     style={{ fontSize: "20px", margin: "1vw" }}
                     onClick={() => handleRoute("signout")}
-                >
-                    Sign Out
-        </button>
+                >Sign Out
+                </button>
             </nav>
         );
     } else {
         return (
-            <nav style={{ display: "flex", justifyContent: "flex-end" }}>
+            <nav style={{ display: "flex", justifyContent: "left" }}>
                 <button
                     style={{ fontSize: "20px", margin: "1vw" }}
                     onClick={() => handleRoute("signin")}
-                >
-                    Sign In
-        </button>
+                >Sign In
+                </button>
+
                 <button
                     style={{ fontSize: "20px", margin: "1vw" }}
-                    onClick={() => handleRoute("signout")}
-                >
-                    Sign Up
-        </button>
+                    onClick={() => handleRoute("signup")}
+                >Sign Up
+                </button>
             </nav>
         );
     }
